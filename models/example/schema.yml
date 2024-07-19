@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: document
+    description: "Este modelo almacena información detallada sobre documentos o entradas de blog."
+    columns:
+      - name: titulo
+        description: "El título del documento."
+        tests:
+          - not_null
+      - name: contenido
+        description: "El cuerpo principal del documento."
+        tests:
+          - not_null
+      - name: nombre_archivo
+        description: "El nombre del archivo asociado al documento."
+        tests:
+          - not_null
+      - name: categoria
+        description: "La categoría del documento."
+        tests:
+          - not_null
